@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طلب حذف الحساب</title>
+    <title>حذف الحساب</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -94,15 +94,15 @@
             <label for="password">كلمة المرور:</label>
             <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
             
-            <button type="submit">طلب حذف الحساب</button>
+            <button type="submit">حذف الحساب</button>
         </form>
         <div class="message" id="message"></div>
         <!-- المعلومات المطلوبة وفق Google Play -->
         <div class="info">
-            <h3>خطوات طلب حذف الحساب:</h3>
+            <h3>خطوات حذف الحساب:</h3>
             <ol>
                 <li>أدخل البريد الإلكتروني وكلمة المرور الخاصة بك.</li>
-                <li>اضغط على زر "طلب حذف الحساب".</li>
+                <li>اضغط على زر " حذف الحساب".</li>
             </ol>
             <h3>بيانات سيتم حذفها:</h3>
             <p>سيتم حذف جميع البيانات الشخصية المرتبطة بحسابك، مثل البريد الإلكتروني، الاسم، وسجل الاستخدام.</p>
@@ -133,7 +133,7 @@
                 const messageElement = document.getElementById('message');
                 if (response.ok) {
                     messageElement.style.color = 'green';
-                    messageElement.textContent = 'تم إرسال طلب حذف الحساب بنجاح!';
+                    messageElement.textContent = 'تم حذف الحساب بنجاح!';
                 } else {
                     messageElement.style.color = 'red';
                     messageElement.textContent = data.message || 'حدث خطأ أثناء معالجة الطلب.';
